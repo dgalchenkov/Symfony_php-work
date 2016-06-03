@@ -1,0 +1,15 @@
+{# {% extends 'base.html.twig' %} #}
+{% block title %}Market{% endblock %}
+{% block body %}
+    <h2 class="genus-name">All categories</h2>
+    <br>
+<div style="border: 1px solid; width: 130px;">    
+	<ul>
+	    {% for elem in data %}
+	    <li>
+	    	<a href='/Site.com/{{elem.catName}}'>{{elem.catName}}</a>
+	    </li>
+		{% endfor %}
+	</ul>
+</div>
+{% endblock %}

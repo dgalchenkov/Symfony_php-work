@@ -1,0 +1,40 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Rel
+ *
+ * @ORM\Table(name="rel")
+ * @ORM\Entity
+ */
+class Rel
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ID", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="cat_id", type="integer", nullable=false)
+     */
+    private $catId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="gd_id", type="integer", nullable=false)
+     */
+    private $gdId;
+
+
+}
+

@@ -1,0 +1,27 @@
+AppBundle\Entity\Rel:
+    type: entity
+    table: rel
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        catId:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: cat_id
+        gdId:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: gd_id
+    lifecycleCallbacks: {  }
